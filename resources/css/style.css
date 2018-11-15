@@ -10,15 +10,35 @@
 }
 
 html {
-    background-color: #dfe6e9;
+    background-color: #e9eef0;
     color:#000000;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
 
+/*========== COMMON ==========*/
+
+a:link,
+a:visited{
+    text-decoration:underline;
+    color:#000000;
+}
+
+a:active,
+a:hover{
+    text-decoration:underline;
+    color:#908f8f;
+}
 
 /*============================*/
 /*========== HEADER ==========*/
@@ -56,23 +76,61 @@ display: block;
 }
 .text-box{
     position: absolute;
-    background-color: #3498db;
+    background-color: #418FDE;
     text-transform: uppercase;
     color:#fff;
     bottom: 25px;
     left: 30px;
     font-size: 120%;
     padding: 8px;
+    
     }
 
 @media screen and (max-width: 500px) {
   .text-box {
-    font-size: 70%;
+    font-size: 65%;
   }
 }
 
 
-/*========== NAVBAR ==========*/    
+/*========== BUTTONS ==========*/    
+
+
+.topBtn {
+     /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4e4d4d; /* Set a background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 180%; /* Increase font size */
+    width: 50px;
+    height: 50px;
+}
+
+.rotate{
+    display: inline-block;
+    padding: 0px 15px 5px 0px;
+    transform: rotate(90deg);
+}
+
+.topBtn a:link,
+.topBtn a:visited{
+    color: #fff;
+}
+
+.topBtn a:active,
+.topBtn:hover{
+    background-color: #908f8f;
+}
+
+/*========== NAVBAR ==========*/   
 
 .main-nav {
     list-style:none;
@@ -114,30 +172,40 @@ display: block;
 
 /*========== HEADINGS ==========*/
 
+
+h1 {
+    max-width: 700px;
+	text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 200%;
+}
+
 h2 {
     max-width: 700px;
 	text-align: center;
     margin: 0px auto;
     padding: 20px;
     font-weight: 300;
-	
+    letter-spacing: 0.5px;
+    font-size: 160%
 }
 
 h3 {
     text-align: center;
-    font-weight: 300;
-    padding: 20px;	
+    font-weight: 400;
+    padding: 20px;
+    margin-top: 25px;
+    font-size: 120%;
 }
 
-.article-shortcut h3 {
-    padding-top: 40px;
-    padding-bottom: 0px; 
-}
 
 h4 {
 	text-align: center;
     font-weight: 300;
-    padding: 20px;
+    padding: 10px;
     font-size: 95%;
 }
 
@@ -150,17 +218,15 @@ h0 {
 /*========== PARAGRAPHS ==========*/
 
 
-.article-shortcut p {
+p {
     font-family: 'Roboto Condensed', sans-serif;
-	font-size: 18px;
-	max-width: 550px;
+	font-size: 90%;
 	line-height: 150%;
 	margin: auto;
-    padding: 0 20px;
 	text-align: justify;
 	text-indent: 50px;
-	margin-top: 1em;
-    margin-bottom: 1em
+	margin-top: 0.5em;
+    margin-bottom: 0.5em
 }
 
 
@@ -191,7 +257,7 @@ text-indent: 10px;
 	padding-left: 20px;
 }
 
-.program-table td a{
+/*.program-table td a{
     text-decoration: underline;
     color: #000;
 }
@@ -200,8 +266,10 @@ text-indent: 10px;
     text-decoration: underline;
     color: #3498db;
 }
+*/
 
 
+/*========== AUTHOR INFO =========*/
 .author-info{
     max-width: 550px;
     margin: auto;
@@ -216,10 +284,21 @@ text-indent: 10px;
     width:80%;
     margin: 0 auto;
     margin-bottom: 25px;
+    margin-top: 45px;
+    }
+
+.author-info:after{
+    display:block;
+    height: 1px;
+    background-color: #4e4d4d;
+    content: " ";
+    width:80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
     }
 
 .author-info img {
-    width: 100px;
+    width: 120px;
     height: auto;
     float: left;
     margin: 0 15px 0 0
@@ -229,11 +308,78 @@ text-indent: 10px;
     text-align: left;
     font-size: 85%;
     font-weight: bold;
+    text-indent: 0px;
 }
 .author-text {
     font-size: 80%;
     text-align: justify;
     padding: 10px;
+    text-indent: 0px;
     
 }
 
+/*========== ARTICLE =========*/
+.art-image { 
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+}
+
+.art-image-text{
+    text-indent:0px;
+    font-size: 75%;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.art-title {
+    margin: 20px;
+}
+
+.art-title a:link,
+.art-title a:visited{
+    text-decoration:underline;
+    color:#4e4d4d;
+}
+
+.art-title a:active,
+.art-title a:hover{
+    text-decoration:underline;
+    color:#908f8f;
+}
+
+.article {
+    max-width: 550px;
+    padding: 0 15px;
+    margin: auto;
+    }
+
+.art-list {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    font-size: 90%;
+    margin: 10px 0px 25px 40px;
+    }
+
+.art-list li {
+    line-height: ;
+    padding: 4px
+    }
+
+
+
+.art-list-sub {
+    margin-left: 30px;
+    list-style-type: square;
+    padding-top: 5px;
+    
+}
+
+.author-section {
+    margin-bottom: 80px;
+}
