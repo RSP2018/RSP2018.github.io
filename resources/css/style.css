@@ -96,6 +96,27 @@ display: block;
 /*========== BUTTONS ==========*/    
 
 
+/*
+
+.topBtn {
+    position: fixed; 
+    bottom: 10px; 
+    right: 40px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #4e4d4d; 
+    color: #fff; 
+    cursor: pointer; 
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 180%; 
+    width: 50px;
+    height: 50px;
+}
+
+*/
+
 .topBtn {
      /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -107,11 +128,18 @@ display: block;
     background-color: #4e4d4d; /* Set a background color */
     color: #fff; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
+    padding: 8px 5px 5px 5px; /* Some padding */
     border-radius: 15px; /* Rounded corners */
-    font-size: 180%; /* Increase font size */
+    font-size: 40px; /* Increase font size */
     width: 50px;
     height: 50px;
+    text-align: center;
+    
+}
+
+.topBtn i{
+    margin: 0 1px 0 0;
+    right: 10px;
 }
 
 .rotate{
@@ -219,8 +247,8 @@ h0 {
 
 
 p {
-    font-family: 'Roboto Condensed', sans-serif;
-	font-size: 90%;
+    font-family: 'Roboto', sans-serif;
+	font-size: 85%;
 	line-height: 150%;
 	margin: auto;
 	text-align: justify;
@@ -365,7 +393,7 @@ text-indent: 10px;
 .art-list {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
-    font-size: 90%;
+    font-size: 85%;
     margin: 10px 0px 25px 40px;
     }
 
@@ -386,5 +414,9 @@ text-indent: 10px;
 .author-section {
     margin-bottom: 80px;
 }
+
+
+
+
 
 
