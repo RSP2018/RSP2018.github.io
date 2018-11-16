@@ -207,7 +207,7 @@ h1 {
     margin: 0px auto;
     padding: 20px;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 200%;
 }
 
@@ -223,7 +223,7 @@ h2 {
 
 h3 {
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
     padding: 20px;
     margin-top: 25px;
     font-size: 120%;
@@ -254,7 +254,8 @@ p {
 	text-align: justify;
 	text-indent: 50px;
 	margin-top: 0.5em;
-    margin-bottom: 0.5em
+    margin-bottom: 0.5em;
+    font-weight: 300; 
 }
 
 
@@ -288,6 +289,9 @@ text-indent: 10px;
 	padding-left: 20px;
 }
 
+
+
+
 /*.program-table td a{
     text-decoration: underline;
     color: #000;
@@ -302,7 +306,7 @@ text-indent: 10px;
 
 /*========== AUTHOR INFO =========*/
 .author-info{
-    max-width: 550px;
+    max-width: 600px;
     margin: auto;
     padding: 0 20px;
 }
@@ -385,7 +389,7 @@ text-indent: 10px;
 }
 
 .article {
-    max-width: 550px;
+    max-width: 600px;
     padding: 0 15px;
     margin: auto;
     }
@@ -395,11 +399,14 @@ text-indent: 10px;
     list-style-position: inside;
     font-size: 85%;
     margin: 10px 0px 25px 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
     }
 
 .art-list li {
-    line-height: ;
-    padding: 4px
+    line-height: 150% ;
+    padding: 5px;
     }
 
 
