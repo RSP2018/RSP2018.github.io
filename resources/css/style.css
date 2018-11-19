@@ -1,3 +1,8 @@
+/*Colors
+old-bkg: #e9eef0;
+bkg #f3f6f7
+bv #418FDE
+*/
 /*=====================================================*/
 /* BASIC SETUP */
 /*=====================================================*/
@@ -10,7 +15,7 @@
 }
 
 html {
-    background-color: #e9eef0;
+    background-color:  #f3f6f7;
     color:#000000;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
